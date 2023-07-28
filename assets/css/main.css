@@ -15,7 +15,7 @@ p {
     position: fixed;
     display: flex;
     flex-direction: column;
-    background-color: red;
+    background-color: f6f6e5;
   }
   
   .logo {
@@ -55,6 +55,9 @@ p {
     opacity: 0;
     transition: all 0.3s;
   }
+  nav ul li a{
+    position: relative;
+  }
   nav ul li a i {
     font-size: 18px;
     color: bisque;
@@ -65,6 +68,30 @@ p {
   nav ul li a:hover + span {
     opacity: 1;
     left: 30px;
+  }
+  nav ul li a:before {
+    content: "";
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: red;
+    opacity: 0.15;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  nav ul li a.active:before {
+    opacity: 0.15;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  nav ul li a.active i {
+    color: #c0c6d3;
+  }
+  nav ul li a i {
+    font-size: 18px;
+    color: #B6B7BA;
+    transition: all 0.3s;
   }
   
   .toggle-mode {
