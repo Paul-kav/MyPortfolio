@@ -61,6 +61,7 @@ p {
   nav ul li a i {
     font-size: 18px;
     color: bisque;
+    transition: all 0.3s;
   }
   nav ul li a:hover i {
     color: white;
@@ -76,17 +77,18 @@ p {
     height: 46px;
     border-radius: 50%;
     background: red;
-    opacity: 0.15;
+    opacity: 0;
     top:50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.2s;
   }
   nav ul li a.active:before {
     opacity: 0.15;
     transform: translate(-50%, -50%) scale(1);
   }
   nav ul li a.active i {
-    color: #c0c6d3;
+    color: #193e8f;
   }
   nav ul li a i {
     font-size: 18px;
