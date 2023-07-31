@@ -15,4 +15,12 @@ navLinks.forEach((link) => {
       document.querySelector(`main > section${link.getAttribute('href')}`).classList.add("active");
     });
   });
+
+  //responsive mobile bars opening and closing
+  document.querySelector("#sidebar .toggle-sidebar").addEventListener("click", function(){
+    document.querySelector("#sidebar").classList.toggle("open");
+  });
+ 
+
+
   

@@ -44,7 +44,10 @@ p {
     opacity: 1;
     left: 30px;
   }
-  nav ul li span {
+  nav ul li a span {
+    display: none;
+  }
+  nav ul li > span {
     position: absolute;
     white-space: nowrap;
     top: -8px;
@@ -54,6 +57,7 @@ p {
     border-radius: 6px;
     opacity: 0;
     transition: all 0.3s;
+
   }
   nav ul li a{
     position: relative;
@@ -95,6 +99,17 @@ p {
     color: #B6B7BA;
     transition: all 0.3s;
   }
+  .toggle-sidebar{
+    display: none;
+    justify-content: center;
+      align-items: center;
+      position: absolute;
+      font-size: 30px;
+      background: #ae91ac;
+      width: 45px;
+      height: 45px;
+      right: -45px;
+  }
   
   .toggle-mode {
     height: 20%;
@@ -132,4 +147,46 @@ p {
   
   main {
     padding-left: 102px;
+    background-color: #a19ea3; /*temporary background*/
+  }
+
+  /* mobile styles */
+  @media (max-width: 768px) {
+    #sidebar {
+      background: #ae91ac;
+      padding-right: 60px;
+      transform: translateX(-100%);
+      transition: all 0.3s;
+    }
+    .open {
+      transform: translateX(0);
+    }
+    .toggle-sidebar{
+      display: flex;
+      
+    }
+    
+    .logo{
+      text-align: left;
+    }
+    nav ul li a {
+      display: flex;
+      align-items: center;
+      padding: 8px;
+      text-decoration: none;
+    }
+    nav ul li a:before {
+      display: none;
+    }
+    nav ul li a span {
+      display: block;
+      padding-left: 8px;
+    }
+    nav ul li > span {
+      display: none;
+    }
+    main{
+      padding-left: 0px;
+    }
+
   }
