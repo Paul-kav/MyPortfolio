@@ -16,7 +16,7 @@ navLinks.forEach((link) => {
     });
   });
 
-  //responsive mobile bars opening and closing
+//   //responsive mobile bars opening and closing
   document.querySelector("#sidebar .toggle-sidebar").addEventListener("click", function(){
     document.querySelector("#sidebar").classList.toggle("open");
   });

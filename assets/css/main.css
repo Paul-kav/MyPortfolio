@@ -1,11 +1,25 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 p {
     color: bisque;
     font-family: "PT Sans", sans-serif;
   }
   
   body {
-    background-color: rgb(246, 242, 242);
-    height: 2000px;
+    background-color: rgba(62, 19, 19, 0.096);
+    
+  }
+  main {
+    padding-left: 102px;
+    /* background-color: #a19ea3; temporary background */
+  }
+  main > section.active {
+    display: block;
   }
   
   #sidebar {
@@ -102,20 +116,20 @@ p {
   .toggle-sidebar{
     display: none;
     justify-content: center;
-      align-items: center;
-      position: absolute;
-      font-size: 30px;
-      background: #ae91ac;
-      width: 45px;
-      height: 45px;
-      right: -45px;
+    align-items: center;
+    position: absolute;
+    font-size: 30px;
+    background: #ae91ac;
+    width: 45px;
+    height: 45px;
+    right: -45px;
   }
   
   .toggle-mode {
     height: 20%;
     display: flex;
     padding-bottom: 62px;
-    /* align-items: flex-end; */
+    align-items: flex-end;
   }
 
   .toggle-mode .outer {
@@ -128,27 +142,14 @@ p {
   .toggle-mode .outer .inner{
     position: relative;
     width: 14px;
+    height: 14px;
     border-radius: 50%;
     margin-right: auto;
     margin-left: auto;
     margin-top: 16px;
     background: #658df2;
   }
-  .toggle-mode .outer .inner:before {
-    position: absolute;
-    content: "";
-    width: 14px;
-    height: 14px;
-    background: #1e1e1e20;
-    top: -4px;
-    left: 3px;
-    border-radius: 50%;
-  }
   
-  main {
-    padding-left: 102px;
-    background-color: #a19ea3; /*temporary background*/
-  }
 
   /* mobile styles */
   @media (max-width: 768px) {
@@ -158,35 +159,40 @@ p {
       transform: translateX(-100%);
       transition: all 0.3s;
     }
-    .open {
+    #sidebar.open {
       transform: translateX(0);
     }
-    .toggle-sidebar{
+    #sidebar .toggle-sidebar{
       display: flex;
       
     }
     
-    .logo{
+    #sidebar .logo{
       text-align: left;
     }
-    nav ul li a {
+    #sidebar nav ul li a {
       display: flex;
       align-items: center;
       padding: 8px;
       text-decoration: none;
     }
-    nav ul li a:before {
+    #sidebar nav ul li a:before {
       display: none;
     }
-    nav ul li a span {
+    #sidebar nav ul li a span {
       display: block;
       padding-left: 8px;
     }
-    nav ul li > span {
+    #sidebar nav ul li > span {
       display: none;
     }
     main{
-      padding-left: 0px;
+      padding-left: 0;
+      padding-top: 50px; /*temporary  */
     }
 
+  }
+
+  #home {
+    background: #193e8f;
   }
