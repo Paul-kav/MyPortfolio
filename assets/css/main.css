@@ -6,8 +6,11 @@
 }
 
 p {
-    color: bisque;
+    /* color: bisque; */
     font-family: "PT Sans", sans-serif;
+  }
+  h1{
+    
   }
   
   body {
@@ -192,7 +195,10 @@ p {
     }
 
   }
-
+ /* Home section stlyes */
   #home {
-    background: #193e8f;
+    .info {
+      padding-top: 300px;
+    }
+
   }
