@@ -30,6 +30,12 @@ p {
     padding-left: 102px;
     /* background-color: #a19ea3; temporary background */
   }
+   main > section{
+    /* display: none; */
+    padding-right: 144px;
+    padding-right: 114px;
+   }
+
   main > section.active {
     display: block;
   }
@@ -45,6 +51,7 @@ p {
   
   .logo {
     height: 20%;
+    padding-top: 50px;
   }
   
   nav {
@@ -164,6 +171,7 @@ p {
 
   /* mobile styles */
   @media (max-width: 768px) {
+    /* Sidebar css styles */
     #sidebar {
       background: #ae91ac;
       padding-right: 60px;
@@ -174,59 +182,93 @@ p {
       transform: translateX(0);
     }
     #sidebar .toggle-sidebar{
-      display: flex;
-      
-    }
-    
+      display: flex; 
+    } 
+
     #sidebar .logo{
       text-align: left;
     }
+
     #sidebar nav ul li a {
       display: flex;
       align-items: center;
       padding: 8px;
       text-decoration: none;
+      color: white;
     }
+
     #sidebar nav ul li a:before {
       display: none;
     }
+
     #sidebar nav ul li a span {
       display: block;
       padding-left: 8px;
     }
+
     #sidebar nav ul li > span {
       display: none;
     }
+
+    /* Home section mobile css styles */
+    #home .info{
+      padding-top: 100px;
+    }
+
+    h1{
+      font-size:36px;
+    }
+
+    h2{
+      font-size: 18px;
+    }
+
+
     main{
       padding-left: 0;
       padding-top: 50px; /*temporary  */
     }
 
+    main > section{
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
   }
+
+  /* Tablet style */
+  @media (max-width:991px){
+    #home .image{
+      justify-content: flex-start;
+      height: unset;
+      margin-top: 20px;
+    }
+  }
+
  /* Home section stlyes */
   #home {
     padding-bottom: 26px;
   }
     
-  .info {
+  #home .info {
       padding-top: 300px;
     }
     
-  .info h1{
+  #home.info h1{
       margin-bottom: 24px;
     }
 
-  .info h1 span{
+  #home .info h1 span{
       color: darkslategray;
     }
 
-  .info p{
+  #home .info p{
       max-width: 430px;
       margin-bottom: 72px;
     }
 
-  .info .btn-custom-blue{
-      background: black;
+  #home .info .btn-custom-blue{
+      background: lightgray ;
       padding: 10px 50px;
       text-decoration: none;
       color: blue;
@@ -234,19 +276,20 @@ p {
       transition: all 0.3s;
     }
 
-  .info .btn-custom-blue:hover{
+  #home .info .btn-custom-blue:hover{
       color: white;
     }
 
-  .image {
-      height: 100vh;
+  #home .image {
+      height: 100vh; 
       display: flex;
       align-items: center;
       justify-content: flex-end; 
     }
 
-  .image img{
+  #home .image img{
       padding-top: 50px; 
       border-radius: 6px;
+      max-width: 100%;
     }
      
