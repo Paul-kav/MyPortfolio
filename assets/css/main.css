@@ -4,13 +4,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+h1,h2,h4,h5,h6 {
+  font-family: sans-serif;
+}
 
 p {
     /* color: bisque; */
-    font-family: "PT Sans", sans-serif;
+    font-family: sans-serif;
   }
   h1{
-    
+    font-size: 48px;
+    font-weight: 700;
+  }
+  h2{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
   }
   
   body {
@@ -27,7 +36,6 @@ p {
   
   #sidebar {
     height: 100vh;
-    padding-left: 39px;
     padding-left: 39px;
     position: fixed;
     display: flex;
@@ -197,8 +205,48 @@ p {
   }
  /* Home section stlyes */
   #home {
-    .info {
+    padding-bottom: 26px;
+  }
+    
+  .info {
       padding-top: 300px;
     }
+    
+  .info h1{
+      margin-bottom: 24px;
+    }
 
-  }
+  .info h1 span{
+      color: darkslategray;
+    }
+
+  .info p{
+      max-width: 430px;
+      margin-bottom: 72px;
+    }
+
+  .info .btn-custom-blue{
+      background: black;
+      padding: 10px 50px;
+      text-decoration: none;
+      color: blue;
+      border-radius: 6px;
+      transition: all 0.3s;
+    }
+
+  .info .btn-custom-blue:hover{
+      color: white;
+    }
+
+  .image {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; 
+    }
+
+  .image img{
+      padding-top: 50px; 
+      border-radius: 6px;
+    }
+     
