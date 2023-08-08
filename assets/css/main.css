@@ -212,7 +212,7 @@ p {
 
     /* Home section mobile css styles */
     #home .info{
-      padding-top: 100px;
+      padding-top: 50px; 
     }
 
     h1{
@@ -251,7 +251,7 @@ p {
   }
     
   #home .info {
-      padding-top: 300px;
+      padding-top: 300px; /*work on trying to decrease this padding*/
     }
     
   #home.info h1{
