@@ -11,7 +11,9 @@ h1,h2,h4,h5,h6 {
 p {
     /* color: bisque; */
     font-family: sans-serif;
+    line-height: 195%;
   }
+
   h1{
     font-size: 48px;
     font-weight: 700;
@@ -34,6 +36,7 @@ p {
     /* display: none; */
     padding-right: 144px;
     padding-right: 114px;
+    padding-top: 64px;
    }
 
   main > section.active {
@@ -234,7 +237,10 @@ p {
       padding-right: 32px;
     }
 
+    /* About section mobile css styles */
+  
   }
+
 
   /* Tablet style */
   @media (max-width:991px){
@@ -291,5 +297,22 @@ p {
       padding-top: 50px; 
       border-radius: 6px;
       max-width: 100%;
+    }
+
+    /* About me section */
+    #about h1{
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      margin-bottom: 32px;
+    }
+
+    #about h2{
+      margin-bottom: 18px;
+      color: darkgreen;
+    }
+
+    #about p{
+      max-width: 1200px;
     }
      
