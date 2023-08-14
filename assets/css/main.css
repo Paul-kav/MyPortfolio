@@ -238,7 +238,9 @@ p {
     }
 
     /* About section mobile css styles */
-  
+  #about .container{
+    max-width: 1200px;
+  }
   }
 
 
