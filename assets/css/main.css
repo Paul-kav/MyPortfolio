@@ -236,11 +236,7 @@ p {
       padding-left: 32px;
       padding-right: 32px;
     }
-
-    /* About section mobile css styles */
-  #about .container{
-    max-width: 1200px;
-  }
+  
   }
 
 
@@ -312,9 +308,16 @@ p {
       margin-bottom: 18px;
       color: darkgreen;
     }
-
     #about p{
       max-width: 1200px;
     }
-     
+
+    @media (min-width:1400px){
+      
+      #about .container{
+        max-width: 1200px;
+      }
+    }
+    
+
      
