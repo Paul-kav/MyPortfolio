@@ -318,6 +318,23 @@ p {
         max-width: 1200px;
       }
     }
+
+    /* Skills section */
+    #skills {
+      margin-top: 60px;
+    }
+    #skills h1{
+      display: flex;
+      justify-content: center;
+    }
+
+    #skills h3{
+      display:flex;
+      justify-content: center; 
+      text-align: center;
+      padding: 0 26px;
+    }
+    
     
 
      
