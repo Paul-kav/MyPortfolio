@@ -296,6 +296,7 @@ p {
       border-radius: 6px;
       max-width: 100%;
     }
+
     /* About me section */
     #about h1{
       display: flex;
@@ -311,6 +312,30 @@ p {
     #about p{
       max-width: 1200px;
     }
+
+    /*skills section starts here */
+    #skills h1{
+      text-align: center;
+      padding-bottom: 24px;
+    }
+
+    #skills h3{
+      text-align: center;
+      font-weight: 700;
+      padding-bottom: 20px;
+    }
+
+    .tech-tools {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: space-between; 
+    }
+  
+    .tech-tools p {  
+      width: calc(50% - 10px); 
+      margin: 5px; 
+    }
+  
 
     @media (min-width:1400px){
       
