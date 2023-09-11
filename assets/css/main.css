@@ -324,6 +324,9 @@ p {
       font-weight: 700;
       padding-bottom: 20px;
     }
+    #skills img{
+      padding: 10px;
+    }
 
     .tech-tools {
       display: flex;
