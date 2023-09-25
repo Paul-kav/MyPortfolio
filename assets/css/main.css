@@ -314,6 +314,10 @@ p {
     }
 
     /*skills section starts here */
+    #skills {
+      background: mintcream;
+    }
+    
     #skills h1{
       text-align: center;
       padding-bottom: 24px;
@@ -334,7 +338,8 @@ p {
       justify-content: space-between; 
     }
   
-    .tech-tools p {  
+    .tech-tools p { 
+      font-weight: bold; 
       width: calc(50% - 10px); 
       margin: 5px; 
     }
