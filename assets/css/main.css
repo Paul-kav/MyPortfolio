@@ -238,7 +238,9 @@ p {
     }
   
   }
-
+   .container {
+    padding: 20px; 
+}
 
   /* Tablet style */
   @media (max-width:991px){
@@ -247,6 +249,7 @@ p {
       height: unset;
       margin-top: 20px;
     }
+
   }
 
  /* Home section stlyes */
@@ -315,19 +318,42 @@ p {
 
     /*skills section starts here */
     #skills {
+      margin-top: 60px;
       background: mintcream;
     }
+    #skills h1{
+      display: flex;
+      justify-content: center;
+    }
+
+    #skills h3{
+      display:flex;
+      justify-content: center; 
+      text-align: center;
+      font-weight:700;
+      padding-bottom:26px;
+    }
+
+    #skills .row{
+      padding-left: 20px;
+    }
+
+    #skills h6{
+      /* font-size: 20px; */
+      font-weight: bold;
+    }
     
+    #skills .item{
+      font-style: italic;
+      font-weight: bold;
+    }
+
     #skills h1{
       text-align: center;
       padding-bottom: 24px;
     }
 
-    #skills h3{
-      text-align: center;
-      font-weight: 700;
-      padding-bottom: 20px;
-    }
+    
     #skills img{
       padding: 10px;
     }
@@ -337,20 +363,43 @@ p {
       flex-wrap: wrap; 
       justify-content: space-between; 
     }
+
+    .container {
+      padding: 20px; 
+    }
+
+   .col-6 {
+      flex: 0 0 50%; 
+      max-width: 50%;
+    }
+
+    .col-sm-2 {
+      flex: 0 0 33.33%; 
+      max-width: 33.33%;
+    }
   
     .tech-tools p { 
       font-weight: bold; 
       width: calc(50% - 10px); 
-      margin: 5px; 
-    }
+      margin: 5px;
+      line-height: 175%;
+      font-size: 16px; 
+    }  
   
-
+  /* Desktop section starts here */
     @media (min-width:1400px){
       
       #about .container{
         max-width: 1200px;
       }
+
     }
+
+
+
+
+    
+    
     
 
      
