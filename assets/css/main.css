@@ -381,8 +381,37 @@ h1,h2,h4,h5,h6 {
       text-align: center;
     } 
 
+    #work h3{
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    #work .project a button{
+      border-radius: 50px;
+      background: transparent;
+      font-weight: 700;
+      color: blue;
+      border: 2px solid;
+      width: 25%;
+    }
+
+    #work .row{
+      flex-wrap: wrap;
+      margin: auto;
+      padding: 20px 0 20px 0;
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+    }
+
+    #work .project{
+      padding-bottom: 60px;
+    }
+
     #work .project img{
       max-width: 100%;
+      padding-bottom: 24px;
+      /* border: 2px solid lightgrey; */
       /* max-height: 100%; */
     }
   
