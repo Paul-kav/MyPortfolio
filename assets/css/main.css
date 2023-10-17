@@ -8,10 +8,12 @@ h1,h2,h4,h5,h6 {
   font-family: sans-serif;
 }
 
-p {
+  p {
     /* color: bisque; */
     font-family: sans-serif;
+    line-height: 195%;
   }
+
   h1{
     font-size: 48px;
     font-weight: 700;
@@ -34,6 +36,7 @@ p {
     /* display: none; */
     padding-right: 144px;
     padding-right: 114px;
+    padding-top: 64px;
    }
 
   main > section.active {
@@ -212,7 +215,7 @@ p {
 
     /* Home section mobile css styles */
     #home .info{
-      padding-top: 100px;
+      padding-top: 50px; 
     }
 
     h1{
@@ -233,17 +236,11 @@ p {
       padding-left: 32px;
       padding-right: 32px;
     }
-
+  
   }
-
-  /* Tablet style */
-  @media (max-width:991px){
-    #home .image{
-      justify-content: flex-start;
-      height: unset;
-      margin-top: 20px;
-    }
-  }
+   .container {
+    padding: 20px; 
+}
 
  /* Home section stlyes */
   #home {
@@ -251,7 +248,7 @@ p {
   }
     
   #home .info {
-      padding-top: 300px;
+      padding-top: 300px; /*work on trying to decrease this padding*/
     }
     
   #home.info h1{
@@ -292,4 +289,299 @@ p {
       border-radius: 6px;
       max-width: 100%;
     }
+
+    /* About me section */
+    #about h1{
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      margin-bottom: 32px;
+    }
+
+    #about h2{
+      margin-bottom: 18px;
+      color: darkgreen;
+    }
+    #about p{
+      max-width: 1200px;
+    }
+
+    /*skills section starts here */
+    #skills {
+      margin-top: 60px;
+      background: mintcream;
+    }
+    #skills h1{
+      display: flex;
+      justify-content: center;
+    }
+
+    #skills h3{
+      display:flex;
+      justify-content: center; 
+      text-align: center;
+      font-weight:700;
+      padding-bottom:26px;
+    }
+
+    #skills .row{
+      padding-left: 20px;
+    }
+
+    #skills h6{
+      /* font-size: 20px; */
+      font-weight: bold;
+    }
+    
+    #skills .item{
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    #skills h1{
+      text-align: center;
+      padding-bottom: 24px;
+    }
+
+    
+    #skills img{
+      padding: 10px;
+    }
+
+    .tech-tools {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: space-between; 
+    }
+
+    .container {
+      padding: 20px; 
+    }
+
+   .col-6 {
+      flex: 0 0 50%; 
+      max-width: 50%;
+    }
+
+    .col-sm-2 {
+      flex: 0 0 33.33%; 
+      max-width: 33.33%;
+    }
+  
+    .tech-tools p { 
+      font-weight: bold; 
+      width: calc(50% - 10px); 
+      margin: 5px;
+      line-height: 175%;
+      font-size: 16px; 
+    }  
+  
+    /* work section starts here */
+    #work h1{
+      text-align: center;
+    } 
+
+    #work h3{
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    #work .project a button{
+      border-radius: 50px;
+      background: transparent;
+      font-weight: 700;
+      color: blue;
+      border: 2px solid;
+      width: 25%;
+    }
+
+    #work .row{
+      flex-wrap: wrap;
+      margin: auto;
+      padding: 20px 0 20px 0;
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+    }
+
+    #work .project{
+      padding-bottom: 60px;
+    }
+
+    #work .project img{
+      max-width: 100%;
+      padding-bottom: 24px;
+      /* border: 2px solid lightgrey; */
+      /* max-height: 100%; */
+    }
+
+    /* contact section starts here */
+    #contact {
+      min-height: 60vh;
+    }
+    #contact .container .text-center{
+      margin-top: 123px;
+      padding-bottom: 40px;
+    }
+    #contact .container .form {
+      padding-right: 36px;
+      padding-top: 12px;
+    }
+    #contact .container .form .form-item {
+      position: relative;
+      margin-bottom: 32px;
+    }
+    #contact .container .form .form-item.focus label {
+      top: -3px;
+      font-size: 12px;
+    }
+    #contact .container .form .form-item.focus:after {
+      width: 100%;
+    }
+    #contact .container .form .form-item:before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      background: #808185;
+      bottom: 0;
+      left: 0;
+    }
+    #contact .container .form .form-item:after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 0;
+      background: #fff;
+      bottom: 0;
+      left: 0;
+      transition: all 0.3s;
+    }
+    #contact .container .form .form-item label {
+      position: absolute;
+      top: 17px;
+      color: black;
+      transition: all 0.3s;
+    }
+    #contact .container .form .form-item input,
+    #contact .container .form .form-item textarea {
+      width: 100%;
+      background: transparent;
+      outline: none;
+      border: none;
+      padding: 14px 0;
+    }
+    #contact .container .form .form-item textarea {
+      resize: none;
+      min-height: 171px;
+    }
+
+    #contact .container .form .text-end button{
+      background: lightgray ;
+      padding: 10px 50px;
+      text-decoration: none;
+      color: blue;
+      border-radius: 6px;
+      transition: all 0.3s;
+      border: none;
+    }
+  
+    #contact .container .info {
+      padding-left: 176px;
+      padding-top: 70px;
+    }
+    #contact .container .info .item {
+      display: flex;
+      margin-bottom: 32px;
+      align-items: center;
+    }
+    #contact .container .info .item .text:hover i {
+      background-color: blue;
+      
+    }
+    #contact .container .info .item i {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      background-color: black;
+      font-size: 60px;
+      margin-right: 16px;
+      transition: all 0.3s;
+      color: white;
+      flex-shrink: 0;
+      
+    }
+    
+    #contact .container .info .item .text a {
+      text-decoration: none;
+    }
+
+    footer p{
+      text-align: center;
+    }
+
+    /* Tablet styles */
+    @media (max-width: 991px){
+      #contact .container .info{
+        display: flex;
+        justify-content: center;
+        padding-right: 108px;
+        padding-left: 116px;
+      }
+
+      #contact .container .info .info-item{
+        display: flex;
+      }
+
+      #contact .container .info .info-item i{
+        font-size: 40px;
+        width: 50px;
+        height: 50px;
+      }
+
+      #home .image{
+        justify-content: flex-start;
+        height: unset;
+        margin-top: 20px;
+      }
+  
+      #contact .container .form .info{
+        margin-top: 80px;
+      }
+    }
+    
+  
+  @media (min-width:1199px){
+    #about {
+
+    }
+
+    #contact .container .form{
+      padding-right: 12px;
+    }
+
+    #contact .container .form .info{
+      padding-left: 12px;
+    }
+  }
+
+  /* Desktop section starts here */
+    @media (min-width:1400px){
+      
+      #about .container{
+        max-width: 1200px;
+      }
+
+    }
+
+
+
+
+    
+    
+    
+
      
