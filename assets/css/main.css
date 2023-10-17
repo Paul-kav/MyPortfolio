@@ -9,7 +9,6 @@ h1,h2,h4,h5,h6 {
 }
 
   p {
-    /* color: bisque; */
     font-family: sans-serif;
     line-height: 195%;
   }
@@ -30,10 +29,10 @@ h1,h2,h4,h5,h6 {
   }
   main {
     padding-left: 102px;
-    /* background-color: #a19ea3; temporary background */
+    
   }
+
    main > section{
-    /* display: none; */
     padding-right: 144px;
     padding-right: 114px;
     padding-top: 64px;
@@ -160,6 +159,19 @@ h1,h2,h4,h5,h6 {
     background: #1e1e1e20;
   }
 
+  .btn-custom-blue {
+    display: inline-block;
+    position: relative;
+    background: #262F48;
+    padding: 10px 52px;
+    text-decoration: none;
+    color: #658DF2;
+    border-radius: 8px;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+
   .toggle-mode .outer .inner{
     position: relative;
     width: 14px;
@@ -169,6 +181,27 @@ h1,h2,h4,h5,h6 {
     margin-left: auto;
     margin-top: 16px;
     background: #658df2;
+  }
+
+  .btn-custom-blue:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #658DF2;
+    opacity: 0.3;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: -1;
+    transition: all 0.3s;
+  }
+  .btn-custom-blue:hover {
+    color: #fff;
+  }
+  .btn-custom-blue:hover:before {
+    transform: translate(-50%, -50%) scale(2);
   }
   
 
@@ -262,19 +295,6 @@ h1,h2,h4,h5,h6 {
   #home .info p{
       max-width: 430px;
       margin-bottom: 72px;
-    }
-
-  #home .info .btn-custom-blue{
-      background: lightgray ;
-      padding: 10px 50px;
-      text-decoration: none;
-      color: blue;
-      border-radius: 6px;
-      transition: all 0.3s;
-    }
-
-  #home .info .btn-custom-blue:hover{
-      color: white;
     }
 
   #home .image {
@@ -476,7 +496,7 @@ h1,h2,h4,h5,h6 {
       min-height: 171px;
     }
 
-    #contact .container .form .text-end button{
+    /* #contact .container .form .text-end button{
       background: lightgray ;
       padding: 10px 50px;
       text-decoration: none;
@@ -484,7 +504,7 @@ h1,h2,h4,h5,h6 {
       border-radius: 6px;
       transition: all 0.3s;
       border: none;
-    }
+    } */
   
     #contact .container .info {
       padding-left: 176px;
