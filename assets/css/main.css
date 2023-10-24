@@ -29,7 +29,6 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-
 * {
   color: black;
 }
@@ -121,9 +120,7 @@ main > section.active {
   position: relative;
   margin-bottom: 35px;
 }
-#sidebar nav ul li:hover a i{
-  color: #c60928;
-}
+
 #sidebar nav ul li:hover span {
   opacity: 1;
   left: 30px;
@@ -154,7 +151,7 @@ main > section.active {
 #sidebar nav ul li a:hover i {
   color: white;
 }
-#sidebar nav ul li a:hover + span {
+#sidebar nav ul li a:hover +span {
   opacity: 1;
   left: 30px;
 }
@@ -188,7 +185,7 @@ main > section.active {
   justify-content: center;
   align-items: center;
   position: absolute;
-  font-size: 30px;
+  font-size: 80px;
   background: #ae91ac;
   width: 45px;
   height: 45px;
@@ -242,6 +239,7 @@ main > section.active {
   opacity: 0.15;
   transform: translate(-50%, -50%) scale(1);
 }
+
 #sidebar nav ul li a.active i {
   color: #658DF2;
 }
@@ -249,7 +247,7 @@ main > section.active {
   display: none;
 }
 #sidebar nav ul li a i {
-  font-size: 18px;
+  font-size: 20px;
   color: #B6B7BA;
   transition: all 0.3s;
 }
@@ -264,7 +262,7 @@ main > section.active {
   opacity: 0;
   transition: all 0.3s;
 }
-#sidebar .toggle-mode {
+/* #sidebar .toggle-mode {
   height: 20%;
   display: flex;
   align-items: flex-end;
@@ -295,7 +293,7 @@ main > section.active {
   top: -4px;
   left: 3px;
   border-radius: 50%;
-}
+} */
 
 .btn-custom-blue {
   display: inline-block;
@@ -342,15 +340,12 @@ main > section.active {
   }
 
 #home .image {
-    /* height: 100vh;  */
     display: flex;
     align-items: center;
     justify-content: flex-end; 
   }
 
 #home .image img{
-    /* padding-top: 10px;  */
-    /* border-radius: 8px; */
     max-width: 100%;
     max-height: 75%;
   }
@@ -395,7 +390,6 @@ main > section.active {
   }
 
   #skills h6{
-    /* font-size: 20px; */
     font-weight: bold;
   }
   
@@ -403,30 +397,14 @@ main > section.active {
     font-style: italic;
     font-weight: bold;
   }
-
-  /* #skills h1{
-    text-align: center;
-    padding-bottom: 24px;
-  } */
-
   
   #skills .container .row .stack .skill-items .item img{
     padding: 10px;
-    /* font-size: 80px; */
   }
 
-  /* #skills .container .row .stack .skill-items{
-    display: flex;
-    flex-direction: column;
-  } */
   .container {
     padding: 20px; 
   }
-
- /* .col-6 {
-    flex: 0 0 50%; 
-    max-width: 50%;
-  } */
 
   #skills .container .row .stack .skill-items .item {
     flex: 0 0 33.33%; 
@@ -483,8 +461,6 @@ main > section.active {
   #work .project img{
     max-width: 100%;
     padding-bottom: 24px;
-    /* border: 2px solid lightgrey; */
-    /* max-height: 100%; */
   }
 
   /* contact section starts here */
@@ -547,16 +523,6 @@ main > section.active {
     resize: none;
     min-height: 171px;
   }
-
-  /* #contact .container .form .text-end button{
-    background: lightgray ;
-    padding: 10px 50px;
-    text-decoration: none;
-    color: blue;
-    border-radius: 6px;
-    transition: all 0.3s;
-    border: none;
-  } */
 
   #contact .container .info {
     padding-left: 176px;
@@ -646,11 +612,9 @@ main > section.active {
 
 /* Desktop section starts here */
   @media (min-width:1400px){
-    
     #about .container{
       max-width: 1200px;
     }
-
   }
 
   @media (max-width: 767px) {
